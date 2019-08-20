@@ -20,11 +20,12 @@ Export existing AWS resources to [Terraform](https://terraform.io/) style (tf, t
 - [Run as Docker container](#run-as-docker-container-)
 - [Development](#development)
 - [Contributing](#contributing)
+- [Similar projects](#similar-projects)
 - [License](#license)
 
 ## Supported version
 
-- Ruby 2.1 or higher is required
+- Ruby 2.3 or higher is required
 - Terraform v0.9.3 or higher is recommended
   - Some resources (e.g. `iam_instance_profile`) uses newer resource specification
 
@@ -89,6 +90,7 @@ Commands:
   terraforming dbpg            # Database Parameter Group
   terraforming dbsg            # Database Security Group
   terraforming dbsn            # Database Subnet Group
+  terraforming ddb             # DynamoDB
   terraforming ec2             # EC2
   terraforming ecc             # ElastiCache Cluster
   terraforming ecsn            # ElastiCache Subnet Group
@@ -398,6 +400,13 @@ Please read [Contribution Guide](CONTRIBUTING.md) at first.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Similar projects
+
+There are some similar tools to import your existing infrastructure to Terraform configuration.
+
+- [GoogleCloudPlatform/terraformer](https://github.com/GoogleCloudPlatform/terraformer)
+- [cycloidio/terracognita](https://github.com/cycloidio/terracognita/)
 
 ## License
 
